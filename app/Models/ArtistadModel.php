@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class ArtistadModel extends Model
 {
-    use HasFactory;
-    public $timestamaps = false;
+    public $table = 'Disqueus';
+    public $primaryKey = 'id';
+    public $incrementing = true;
+    public $timestamps = false;
 }
