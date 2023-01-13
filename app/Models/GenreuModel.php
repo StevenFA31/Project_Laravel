@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-
-class ArtistadModel extends Model
+class GenreuModel extends Model
 {
-    public $table = 'Disqueus';
+    // use HasFactory;
+    public $table = 'genreus';
     public $primaryKey = 'id';
     public $incrementing = true;
     public $timestamps = false;

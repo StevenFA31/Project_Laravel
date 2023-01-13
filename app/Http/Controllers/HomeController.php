@@ -8,15 +8,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-
-        // $user = HomeController::create([
-        //     'first_name' => 'Taylor',
-        //     'last_name' => 'Otwell',
-        //     'title' => 'Developer',
-        // ]);
-
-        // $users = DB::table('users')->get();
-
         return view('home');
     }
 

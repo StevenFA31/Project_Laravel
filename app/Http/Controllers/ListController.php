@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\DisqueuModel;
 use Illuminate\Http\Request;
 
 class ListController extends Controller
 {
-    public function index()
+    function show()
     {
-        return view('list');
+        return DisqueuModel::all();
     }
 }
