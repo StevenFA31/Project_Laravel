@@ -12,11 +12,11 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('Artisteuus', function (Blueprint $table) {
-            $table->increments('id');
-            $table->char('nom', 100);
+        Schema::create('genre', function (Blueprint $table) {
+            $table->id();
+            $table->string('nom');
+            $table->timestamps();
         });
-
     }
 
     /**

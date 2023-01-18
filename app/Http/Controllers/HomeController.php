@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -10,34 +10,6 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-
-// public function list()
-// {
-//     return view('home');
-// }
-// public function show()
-// {
-//     return view('home');
-// }
-// public function create()
-// {
-//     return view('home');
-// }
-// public function update()
-// {
-//     return view('home');
-// }
-// public function delete()
-// {
-//     return view('home');
-// }
-// public function destroy()
-// {
-//     return view('home');
-// }
-
-
 }
 
 ?>
