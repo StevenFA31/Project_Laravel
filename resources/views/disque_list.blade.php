@@ -7,6 +7,7 @@
     <thead>
       <tr>
         <th scope="col">ID</th>
+        <th scope="col">TITRE</th>
         <th scope="col">ARTISTE</th>
         <th scope="col">GENRE</th>
         <th scope="col">ANNÉE</th>
@@ -16,6 +17,7 @@
         @foreach ($disques as $disque)
         <tr>
             <td>{{ $disque->id }}</td>
+            <td>{{ $disque->titre }}</td>
             <td>{{ $disque->artiste->nom }}</td>
             <td>{{ $disque->genre->nom }}</td>
             <td>{{ $disque->annee }}</td>
@@ -29,5 +31,7 @@
 
     </tbody>
   </table>
-  <a href="/disque/create">Nouveau disque</a>
+  <div class="divCatButton">
+  <a class="addForm gray btn" href="/disque/create">Nouveau disque</a>
+  </div>
 @endsection

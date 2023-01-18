@@ -10,7 +10,7 @@
             <th></th>
         </tr>
     </thead>
-    <tboby>
+    <tbody>
         @foreach ($artistes as $artiste)
             <tr>
                 <td>{{ $artiste->id }}</td>
@@ -22,7 +22,9 @@
                 </td>
             </tr>
         @endforeach
-    </tboby>
+    </tbody>
 </table>
-<a href="/artiste/create">Nouvel artiste</a>
+<div class="divCatButton">
+<a class="addForm gray btn" href="/artiste/create">Nouvel artiste</a>
+</div>
 @endsection

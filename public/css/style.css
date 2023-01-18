@@ -31,14 +31,14 @@ form {
     align-items: center;
 }
 
-input {
+/* input {
     margin-bottom: 20px;
     width: 500px;
     height: 30px;
     border: 2px;
     border-radius: 15px;
     text-align: center;
-}
+} */
 
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -82,10 +82,18 @@ h2 {
 }
 
 /* button div */
-#buttons {
-    padding-top: 50px;
+
+/* .box-buttons {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: center;
-}
+} */
+
+/* #buttons {
+    text-align: center;
+} */
 
 /* start da css for da buttons */
 .btn {
@@ -97,6 +105,7 @@ h2 {
     color: #fff;
     position: relative;
     display: inline-block;
+    border: 0;
 }
 
 .btn:active {
@@ -159,20 +168,39 @@ h2 {
     background-color: #ffde29;
 }
 
-/* copyright stuffs.. */
-p {
-    text-align: center;
-    color: #55acee;
-    padding-top: 20px;
+.gray {
+    background-color: #808080;
+    box-shadow: 0px 5px 0px 0px #686868;
+}
+
+.gray:hover {
+    background-color: #999797;
 }
 
 /****************** IMAGE DE CHAT *******************/
 
 /* div.divCat {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 } */
+
+.divcat .divCatButton {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divCatButton {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+}
 
 div.presentation {
     display: flex;
@@ -187,4 +215,36 @@ img.cat {
     height: 200px;
     width: 200px;
     box-shadow: 12px 15px 4px 1px rgba(0, 0, 0, 0.37);
+}
+
+/*************** LISTE *******************/
+
+table {
+    width: 600px;
+    text-align: center;
+    background-color: #8498af;
+    /* background: linear-gradient(0.25turn, #f5e3e6, #d9e4f5); */
+    /* background: linear-gradient(0.25turn, #4b5b6e, #8498af); */
+
+    border-radius: 5px;
+}
+
+.divCat {
+    /* background-color: #784ba0; */
+    background: linear-gradient(0.25turn, #28313b, #485461);
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+a.addForm {
+}
+
+/**************** FOOTER  ******************/
+
+footer {
+    margin: 50px 0;
+    width: 100vw;
+    text-align: center;
+    color: #55acee;
 }

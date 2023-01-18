@@ -9,8 +9,9 @@
     </div>
     <div>
         <input type="hidden" name="id" value="{{ $artiste->id ?? '' }}">
-        <button type="submit">Valider</button>
+        <a class="addForm gray btn" href="/artiste">Retour</a>
+        <button class="addForm gray btn" type="submit">Valider</button>
+
     </div>
 </form>
-<a href="/artiste">Retour</a>
 @endsection

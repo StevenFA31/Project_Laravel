@@ -4,6 +4,10 @@
 <form name="disqueForm" method="post" action="/disque/{{ $path }}">
     @csrf
     <div>
+        <label for="titre">Titre</label>
+        <input name="titre" id="titre" class="" value="{{ $disque->titre ?? '' }}">
+    </div>
+    <div>
         <label for="annee">Année</label>
         <input name="annee" id="annee" class="" value="{{ $disque->annee ?? '' }}">
     </div>
@@ -25,8 +29,8 @@
     </div>
     <div>
         <input type="hidden" name="id" value="{{ $disque->id ?? '' }}">
-        <button type="submit">Valider</button>
+        <a class="addForm gray btn" href="/disque">Retour</a>
+        <button class="addForm gray btn" type="submit">Valider</button>
     </div>
 </form>
-<a href="/disque">Retour</a>
 @endsection

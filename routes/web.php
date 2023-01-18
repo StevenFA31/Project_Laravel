@@ -39,6 +39,10 @@ Route::post('/disque/update', [DisqueController::class, 'update']);
 Route::get('/disque/delete/{id}', [DisqueController::class, 'delete']);
 
 
+// Route::middleware('auth')->group(function () {
+
+// });
+
 // Route::get('/', [HomeController::class, 'index']);
 
 // Route::get('/chat', [ChatController::class, 'index']);

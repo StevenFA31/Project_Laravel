@@ -22,6 +22,8 @@
       </tr> 
     </tbody>
   </table>
-  <a href="/genre">Retour</a>
+<div class="divCatButton">
+  <a class="addForm gray btn" href="/genre">Retour</a>
+</div>
 
 @endsection

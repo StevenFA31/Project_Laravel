@@ -25,8 +25,9 @@ class DisqueController extends Controller
 
     public function create(Request $request)
     {
-        if ($request->input('annee') !== null) {
+        if ($request->input('annee') && $request->input('titre') !== null) {
             $disque = new Disque;
+            $disque->titre = $request->input('titre');
             $disque->annee = $request->input('annee');
             $disque->artiste_id = $request->input('artiste');
             $disque->genre_id = $request->input('genre');
@@ -40,9 +41,10 @@ class DisqueController extends Controller
 
     public function update(Request $request, $id = null)
     {
-        if ($request->input('annee') !== null) {
+        if ($request->input('annee') && $request->input('titre') !== null) {
             $disque = Disque::find($request->input('id'));
             $disque->annee = $request->input('annee');
+            $disque->titre = $request->input('titre');
             $disque->save();
             return redirect('/disque');
         }

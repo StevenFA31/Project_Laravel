@@ -15,7 +15,7 @@ return new class extends Migration {
         Schema::create('disque', function (Blueprint $table) {
             $table->id();
             $table->string('annee');
-            $table->string('title');
+            $table->string('titre');
             $table->unsignedBigInteger('genre_id');
             $table->foreign('genre_id')
                 ->references('id')

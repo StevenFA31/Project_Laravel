@@ -1,17 +1,18 @@
 @extends('layout')
-
+@section('title', "Formulaire genre")
 @section('content')
-<h1>Formulaire genre</h1>
 <form name="genreForm" method="post" action="/genre/{{ $path }}">
     @csrf
     <div>
         <label for="nom">Genre</label>
         <input name="nom" id="nom" class="" value="{{ $genre->nom ?? '' }}">
     </div>
-    <div>
+    <div class="divCatButton">
         <input type="hidden" name="id" value="{{ $genre->id ?? '' }}">
-        <button type="submit">Valider</button>
+        <button class="addForm gray btn" type="submit">Valider</button>
+<a class="addForm gray btn" href="/genre">Retour</a>
+
     </div>
 </form>
-<a href="/genre">Retour</a>
+
 @endsection

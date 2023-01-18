@@ -1,5 +1,7 @@
 @extends('layout')
+
 @section('title', "Page liste disque")
+
 @section('content')
 
 <table>
@@ -7,10 +9,9 @@
         <tr>
             <th>ID</th>
             <th>Genre</th>
-            <th></th>
         </tr>
     </thead>
-    <tboby>
+    <tbody>
         @foreach ($genres as $genre)
             <tr>
                 <td>{{ $genre->id }}</td>
@@ -22,7 +23,9 @@
                 </td>
             </tr>
         @endforeach
-    </tboby>
+    </tbody>
 </table>
-<a href="/genre/create">Nouveau genre</a>
+<div class="divCatButton">
+<a class="addForm gray btn" href="/genre/create">Nouveau genre</a>
+</div>
 @endsection

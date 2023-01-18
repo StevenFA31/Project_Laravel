@@ -11,5 +11,7 @@
 </div>
 
 </ul>
-<a href="/artiste">Retour</a>
+<div class="divCatButton">
+<a class="addForm gray btn" href="/artiste">Retour</a>
+</div>
 @endsection
